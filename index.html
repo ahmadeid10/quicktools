@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QuickTools</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+<h1>QuickTools</h1>
+</nav>
+
+
+<div class="container">
+
+<div class="tool">
+<h2>Age Calculator</h2>
+<input type="date" id="birthdate">
+<button id="calculateAgeBtn">Calculate</button>
+<p id="ageResult"></p>
+</div>
+
+<div class="tool">
+<h2>BMI Calculator</h2>
+<input type="number" id="weight" placeholder="Weight (kg)">
+<input type="number" id="height" placeholder="Height (cm)">
+<button id="calculateBMIBtn">Calculate</button>
+<p id="bmiResult" class="result"></p>
+</div>
+
+<div class="tool">
+<h2>Mile to KM Converter</h2>
+<input type="number" id="mile">
+<button id="convertMileBtn">Convert</button>
+<p id="kmResult"></p>
+</div>
+
+
+<div class="tool">
+<h2>Days Between Dates</h2>
+<input type="date" id="date1">
+<input type="date" id="date2">
+<button id="calculateDaysBtn">Calculate</button>
+<p id="daysBetweenResult"></p>
+</div>
+
+<div class="tool">
+<h2>GPA Calculator</h2>
+<input type="number" id="grade1" placeholder="Grade 1">
+<input type="number" id="grade2" placeholder="Grade 2">
+<input type="number" id="grade3" placeholder="Grade 3">
+<button id="calculateGPABtn">Calculate GPA</button>
+<p id="gpaResult"></p>
+</div>
+
+<div class="tool">
+<h2>Discount Calculator</h2>
+<input type="number" id="originalPrice" placeholder="Original Price">
+<input type="number" id="discountPercent" placeholder="Discount %">
+<button id="calculateDiscountBtn">Calculate</button>
+<p id="discountResult"></p>
+</div>
+
+</div>
+
+<footer class="footer">
+<p>QuickTools © 2026</p>
+<p>Free online calculators and tools</p>
+<p>Simple & for everyone</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
