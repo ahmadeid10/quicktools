@@ -1,102 +1,75 @@
 body{
-font-family: Arial;
-background:#f4f6f9;
+background:#0f172a;
+color:white;
+font-family:Arial, sans-serif;
 text-align:center;
 margin:0;
-padding:0 0 80px 0;
 }
 
-.navbar{
-background:#2c3e50;
-color:white;
-padding:15px;
-font-size:22px;
-font-weight:bold;
-text-align:center;
-box-shadow:0 2px 5px rgba(0,0,0,0.2);
-}
+/* العنوان */
 
 h1{
-background:#2c3e50;
-color:white;
-padding:20px;
+background:#1e293b;
+padding:15px;
 margin:0;
+color:#38bdf8;
 }
 
-h2{
-margin-top:40px;
+/* الكروت */
+
+.tool{
+background:#1e293b;
+margin:20px auto;
+padding:20px;
+width:300px;
+border-radius:10px;
+box-shadow:0 0 10px black;
 }
+
+/* المدخلات */
 
 input{
 padding:10px;
 margin:5px;
 border-radius:5px;
-border:1px solid #ccc;
+border:none;
+width:80%;
 }
 
+/* الأزرار */
+
 button{
-padding: 10px 20px;
-font-size: 18px;
+padding:10px 20px;
+margin-top:10px;
 border:none;
-background:#3498db;
-color:white;
-border-radius:10px;
+border-radius:8px;
+background:#38bdf8;
+color:black;
+font-weight:bold;
 cursor:pointer;
-transition: all 0.3s ease;
 }
 
 button:hover{
-background:#2980b9;
-transform: scale(1.05);
+background:#0ea5e9;
 }
 
-button:active{
-transform: scale(0.98);
-}
+/* النتيجة */
 
 p{
-font-weight:bold;
-margin-top:10px;
-}
-
-
-.container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-padding:20px;
-}
-
-.tool{
-background:white;
-width:300px;
-padding:20px;
-margin:15px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-.result{
-font-weight:bold;
 font-size:18px;
 margin-top:10px;
 }
 
+/* الفوتر */
+
 .footer{
-background:#2c3e50;
-color:white;
-text-align:center;
+background:#020617;
 padding:20px;
-font-size:16px;
-bottom: 0;
-left: 0;
-width: 40%;
-margin:  auto;
+margin-top:40px;
 }
 
-@media (max-width: 768px) {
-    .tool {
-        width: 100%;
-        margin: 10px 0;
-    }
+a{
+color:#38bdf8;
+margin:10px;
+text-decoration:none;
 }
