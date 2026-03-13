@@ -88,10 +88,26 @@ text-decoration:none;
 
 /* ===== Phone ===== */
 
-@media (max-width: 700px){
+@media (max-width: 900px) {
+  .tools,
+  .container {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
 
-.tools{
-grid-template-columns: 1fr;
-}
+  .tool {
+    max-width: 480px;
+    margin: 0 auto;
+  }
 
+  input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 16px;
+  }
 }
