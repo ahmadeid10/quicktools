@@ -140,6 +140,13 @@ document.getElementById("calculateDaysBtn").addEventListener("click", calculateD
 document.getElementById("calculateGPABtn").addEventListener("click", calculateGPA);
 document.getElementById("calculateDiscountBtn").addEventListener("click", calculateDiscount);
 
+// New tool event listeners
+const randomBtn = document.getElementById("randomBtn");
+if (randomBtn) randomBtn.addEventListener("click", randomNumber);
+
+const passBtn = document.getElementById("passBtn");
+if (passBtn) passBtn.addEventListener("click", generatePassword);
+
 
 function randomNumber(){
 

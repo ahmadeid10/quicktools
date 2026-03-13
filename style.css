@@ -1,46 +1,65 @@
 body{
-background:#0f172a;
+background:#0b1220;
 color:white;
 font-family:Arial, sans-serif;
-text-align:center;
 margin:0;
+text-align:center;
 }
 
-/* العنوان */
+/* ===== Navbar ===== */
+
+.navbar{
+background:#020617;
+padding:15px;
+font-size:18px;
+}
+
+.navbar a{
+color:#38bdf8;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* ===== Title ===== */
 
 h1{
-background:#1e293b;
-padding:15px;
-margin:0;
 color:#38bdf8;
 }
 
-/* الكروت */
+/* ===== Grid ===== */
+
+.tools,
+.container {
+display:grid;
+grid-template-columns: repeat(3, 1fr);
+gap:20px;
+padding:20px;
+}
+
+/* ===== Card ===== */
 
 .tool{
 background:#1e293b;
-margin:20px auto;
 padding:20px;
-width:300px;
 border-radius:10px;
 box-shadow:0 0 10px black;
 }
 
-/* المدخلات */
+/* ===== Inputs ===== */
 
 input{
 padding:10px;
 margin:5px;
-border-radius:5px;
 border:none;
+border-radius:5px;
 width:80%;
 }
 
-/* الأزرار */
+/* ===== Buttons ===== */
 
 button{
 padding:10px 20px;
-margin-top:10px;
 border:none;
 border-radius:8px;
 background:#38bdf8;
@@ -53,23 +72,26 @@ button:hover{
 background:#0ea5e9;
 }
 
-/* النتيجة */
-
-p{
-font-size:18px;
-margin-top:10px;
-}
-
-/* الفوتر */
+/* ===== Footer ===== */
 
 .footer{
 background:#020617;
 padding:20px;
-margin-top:40px;
+margin-top:20px;
 }
 
-a{
+.footer a{
 color:#38bdf8;
 margin:10px;
 text-decoration:none;
+}
+
+/* ===== Phone ===== */
+
+@media (max-width: 700px){
+
+.tools{
+grid-template-columns: 1fr;
+}
+
 }
