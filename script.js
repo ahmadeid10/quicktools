@@ -139,3 +139,35 @@ document.getElementById("convertMileBtn").addEventListener("click", convertMile)
 document.getElementById("calculateDaysBtn").addEventListener("click", calculateDaysBetween);
 document.getElementById("calculateGPABtn").addEventListener("click", calculateGPA);
 document.getElementById("calculateDiscountBtn").addEventListener("click", calculateDiscount);
+
+
+function randomNumber(){
+
+let min = Number(document.getElementById("min").value);
+let max = Number(document.getElementById("max").value);
+
+let result = Math.floor(Math.random() * (max - min + 1)) + min;
+
+document.getElementById("randomResult").innerText = result;
+
+}
+
+
+function generatePassword(){
+
+let length = Number(document.getElementById("passLength").value);
+
+let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%";
+
+let password = "";
+
+for(let i = 0; i < length; i++){
+
+password += chars[Math.floor(Math.random() * chars.length)];
+
+}
+
+document.getElementById("passResult").innerText = password;
+
+}
+
